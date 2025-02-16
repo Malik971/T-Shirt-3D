@@ -58,7 +58,7 @@ const Customizer = () => {
       setGeneratingImg(true);
 
       console.log("Prompt envoyé au backend :", prompt);
-      const response = await fetch("http://localhost:8080/api/v1/dalle", {
+      const response = await fetch("https://t-shirt-3d.onrender.com/api/v1/dalle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
